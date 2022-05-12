@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>lucas_mendes_pereira</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Cadastrar</h1>
+            <form id="formulario" class="formulario">
+                <div class="caixaForm">
+                    <label for="username">Nome de usuário</label>
+                    <input
+                        type="text"
+                        id="username"
+                        placeholder="Digite seu nome de usuário."
+                    />
+                    <small>Mensagem de erro</small>
+                </div>
+                <div class="caixaForm">
+                    <label for="email">Email</label>
+                    <input 
+                        type="text" 
+                        id="email" 
+                        placeholder="Digite seu email."
+                    />
+                    <small>Mensagem de erro</small>
+                </div>
+                <div class="caixaForm">
+                    <label for="password">Senha</label>
+                    <input
+                    type="password"
+                    id="password"
+                    placeholder="Digite sua senha."
+                    />
+                    <small>Mensagem de erro</small>
+                </div>
+                <div class="caixaForm">
+                    <label for="passwordConfirmation">Confirmação de senha</label>
+                    <input
+                    type="password"
+                    id="passworConfirmation"
+                    placeholder="Repita a senha."
+                    />
+                    <small>Mensagem de erro</small>
+                </div>
+                <button type="submit" id="botao" onclick="salvarUser(), executaDebounce()" >Cadastrar</button>
+            </form>
+        </div>
+
+        <script src="index.js"></script>
+
+    </body>
+</html>
